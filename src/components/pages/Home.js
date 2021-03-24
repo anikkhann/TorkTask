@@ -10,7 +10,7 @@ const Home = () => {
     }, [])
     return (
         <div className="container">
-            <div className="py-4">
+            <div className="py-4 mt-5" style={{color: "blue"}}>
                 <h1>
                     Token: 
 

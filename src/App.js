@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Navbar from './components/layout/Navbar';
+import NotFound from './components/pages/NotFound';
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route  exact path="/home" component={Home}/>
           <Route exact path="/about" component={About}/>
+          <Route exact path="*" component={NotFound}/>
       </Switch>
     </div>
   </Router>
